@@ -46,9 +46,7 @@ while vyhra == '-':
         print('Teď hraje počítač')
 
         def tah_pocitace(pole):
-        #Vygeneruje náhodné políčko, zkontoluje obsazenost a hraje
-        #Kontroluje, zda nehraje na obsazené pole a pro info tiskne hlášku (lze ve finální verzi odstranit)
-        #Strategicky se snaží o tři 'o' vedle sebe
+        #Vygeneruje náhodné políčko, zkontoluje obsazenost a hraje (pro info při obsazenosti tiskne hlášku, lze odstranit)
             znak='o'
             policko=randrange(0,len(pole))
             while pole[policko] != '-':
@@ -72,5 +70,3 @@ elif vyhra == 'x':
     print ('Vyhrál jsi!')
 elif vyhra == 'o':
     print ('Vyhrál počítač!')
-else:
-    print ('Máš kód na houby a koukej si tam najít chybu') # kontrolní řádka :) neměla by správně nastat
